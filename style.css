@@ -1,0 +1,54 @@
+/* Apply Verdana font to the entire page */
+body {
+    font-family: Verdana, sans-serif;
+}
+
+/* Style the header section */
+#header {
+    background-color: dimgray;
+    height: 6rem;
+    border-bottom: 0.5rem solid LightSalmon;
+}
+
+/* Style the website name (h1) inside the header */
+#header h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Style the title section */
+#title {
+    height: 27.5rem;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* Remove extra margins for all block elements */
+* {
+    margin: 0;
+}
+
+/* Set flex layout for the 'about' section */
+#about #about p {
+    display: flex;
+}
+
+/* Set the height of the image inside the 'about' section */
+#about img {
+    height: 21.5rem;
+}
+
+/* Style all h3 tags */
+h3 {
+    color: LightSalmon;
+    width: 10rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+/* Set flex layout and spacing for the 'fav' section */
+#fav {
+    display: flex;
+    justify-content: space-evenly;
+}
