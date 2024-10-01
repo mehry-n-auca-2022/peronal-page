@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+   }
+   body {
+   background: url("https://cdn.imgchest.com/files/g4z9cwd2872.png");
+   opacity: .5;
+   background-repeat: no-repeat;
+   }
+   .container {
+   max-width: 1400px;
+   display: flex;
+   gap: 23px;
+   flex-wrap: wrap;
+   }
+   .container > * {
+   background-color: lightblue;
+   font-size: 10rem;
+   color: blue;
+   border: 2px dashed blue;
+   height: 199.1px;
+   flex-grow: 1;
+   gap: 20px;
+   }
+   .container .box1 {
+    flex-basis: 1350px;
+   }
+   .box2, .box3 {
+    justify-content: end;
+    height: 200px;
+   }
+   .box2 {
+    flex-basis: 232px;
+   }
+   .box3 {
+    flex-basis: 990px;
+   }
+   .box4, .box5, .box6 {
+    flex-basis: 400px;
+    height: 199px;
+    justify-content: space-between
+   }
+   .box4 {
+    flex-basis: 400px;
+   }
+   .box5 {
+    flex-basis: 400px;
+   }
+   .box6 {
+    flex-basis: 130px;
+   }
