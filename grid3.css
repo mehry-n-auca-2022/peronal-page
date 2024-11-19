@@ -6,6 +6,8 @@
 }
 
 body {
+    background-image: url(<img src='https://cdn.imgchest.com/files/wye3cdnxp4b.png' style='position: absolute; top:0; left:0; z-index:-1'>
+    );
     background-color: #ffffff;
     max-width: 1170px;
     min-height: 1583px;
