@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="grid2b.css" class="style">   
+</head>
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <img src='https://cdn.imgchest.com/files/myd5cr2k54b.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <div class="container">
+        <div class="box1">
+            <div class="box1-logo"><img src="https://i.imgur.com/n6iyCMX.png" alt="vpmanas"></div>
+        </div>
+        <div class="box2">
+            <div class="box2-image"></div>
+            <div class="box2-text"></div>
+        </div>
+        <div class="box3">
+            <div class="news-logo"><p>NEWS</p></div>
+            <div class="News-section">
+            <div class="product-column-one">
+                <img src="https://i.imgur.com/1StmeD3.jpeg" alt="news-image" class="news-image">
+                <div class="news-one-info">
+                    <p class="news-one-date">11TH OF NOVEMBER</p>
+                    <p class="news-one-title">Which countries and cities can I fly to from Manas International Airport in autumn-winter 2022?</p>
+                </div>
+            </div>
+            <div class="product-column-two">
+                <img src="https://i.imgur.com/1StmeD3.jpeg" alt="news-image" class="news-image">
+                <div class="news-two-info">
+                    <p class="news-two-date">10TH OF NOVEMBER</p>
+                    <p class="news-two-title">Which countries and cities can I fly to from Osh International Airport in autumn-winter 2022?</p>
+                </div>
+            </div>
+            <div class="product-column-three">
+                <img src="https://i.imgur.com/1StmeD3.jpeg" alt="news-image" class="news-image">
+                <div class="news-three-info">
+                    <p class="news-three-date">10TH OF NOVEMBER</p>
+                    <p class="news-three-title">Employees of Issyk-Kul airport rescued a bird listed in the Red Book</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="box4">
+            <div class="flex-layout-2">
+                    <div class="item-one"><p class="text">ABOUT COMPANY</p></div>
+                    <div class="item-two"><p class="text">PASSENGERS</p></div>
+                    <div class="item-three"><p class="text">SERVICES</p></div>
+                    <div class="item-four"><p class="text">PRESS SERVICE</p></div>
+            </div>
+        </div>
+        <div class="box5">
+
+            <ul>
+                <li class="JSCMAM">JSC"MAM"</li>
+                <li class="BISHKEK">BISHKEK</li>
+                <li class="OSH">OSH</li>
+                <li class="ISSYK-KUL">ISSYK-KUL</li>
+                <li class="KARAKOL">KARAKOL</li>
+                <li class="BATKEN">BATKEN</li>
+            </ul>
+            
+        </div>
+        <div class="box6">6</div>
+        <div class="box7">
+            <div class="box7-image"></div>
+            <div class="box7-image"></div>
+        </div>
+        <div class="box8"><h2>Fly High, Fly Comfortably!</h2></div>
+    </div>
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid4.css') {
+                style.setAttribute('href', 'grid2b.css');
+            } else {
+                style.setAttribute('href', 'grid4.css');
+            }
+        }
+
+    </script>        
+        
+</body>
+</html>
