@@ -2,48 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 8</title>
     <link rel="stylesheet" href="grid3.css" class="style">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button onclick="switchStyle()" style="position: absolute; top: 0; right: 0;">Style Switcher</button>
-
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
     <div class="container">
         <div class="box1">
-            <img src="logo.png" alt="Logo" style="width: 100%; height: auto;">
+            <img src="https://i.imgur.com/hc9nPu2.png" alt="Logo">
         </div>
-
-        <div class="box5">
-            <ul>
-                <li>JSCMAM</li>
-                <li>Bishkek</li>
-                <li>Osh</li>
-                <li>Issyk-Kul</li>
-                <li>Karakol</li>
-                <li>Batken</li>
-            </ul>
-        </div>
-
         <div class="box2">
-            <p>Main content goes here.</p>
+            <h1>Hero Heading</h1>
         </div>
-
         <div class="box3">
+            <h2>Content Section</h2>
         </div>
         <div class="box4">
+            <!-- Flexbox Layout 1 content here -->
+        </div>
+        <div class="box5">
+            <!-- Flexbox Layout 2 content here -->
         </div>
         <div class="box6">
-        </div>
-        <div class="box7">
+            <!-- Menu Section in box6 (horizontal layout) -->
+            <ul>
+                <li><button>Menu Item 1</button></li>
+                <li><button>Menu Item 2</button></li>
+                <li><button>Menu Item 3</button></li>
+                <li><button>Menu Item 4</button></li>
+            </ul>
         </div>
     </div>
 
     <script>
         function switchStyle() {
             let style = document.querySelector('.style');
-            if (style.getAttribute('href') === 'grid3.css') {
+            if (style.getAttribute('href') == 'grid3.css') {
                 style.setAttribute('href', 'grid2.css');
             } else {
                 style.setAttribute('href', 'grid3.css');

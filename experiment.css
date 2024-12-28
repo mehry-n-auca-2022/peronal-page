@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for all sections using CSS Grid */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two columns layout */
+    grid-template-rows: auto 1fr auto; /* Header, main content, and footer */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Section Containers (box1, box2, etc.) with borders */
+  .box1, .box2, .box3, .box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  /* Box 1: Header Section */
+  .box1 {
+    grid-column: span 2; /* Spans across both columns */
+    height: 100px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  header .logo img {
+    width: 100px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    width: 300px;
+  }
+  
+  .search-bar button {
+    padding: 8px;
+  }
+  
+  /* Box 2: Sidebar Section */
+  .box2 {
+    grid-row: span 2; /* Takes two rows */
+    height: 400px;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .sidebar h3 {
+    font-size: 18px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar ul li {
+    margin: 8px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Box 3: People List Section */
+  .box3 {
+    height: 400px;
+  }
+  
+  .people-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .people-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .person {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .person img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .person-info p {
+    margin: 5px 0;
+  }
+  
+  /* Box 4: Footer Section */
+  .box4 {
+    grid-column: span 2; /* Spans across both columns */
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 0;
+  }
+  

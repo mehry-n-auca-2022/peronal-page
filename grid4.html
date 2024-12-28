@@ -4,63 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 8</title>
-    <link rel="stylesheet" href="grid4.css" class="style">   
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="grid4.css" class="style">
 </head>
 <body>
     <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
-    <img src='https://cdn.imgchest.com/files/myd5cr2k54b.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <img src="https://cdn.imgchest.com/files/wye3cdnxp4b.png" style="position: absolute; top:0; left:0; z-index:-1; display:none;">
     <div class="container">
         <div class="box1">
-            <div class="logo"><img src="https://i.imgur.com/n6iyCMX.png" alt="vpmanas"></div>
+            <img src="https://www.mashina.kg/bundles/client/default/img/mashinka-name-header.svg" alt="Mashina Logo">
         </div>
         <div class="box2">
-            <div class="box2-image"></div>
-        </div>
-        <div class="box3">
-            <div class="product-column-one">Product 1</div>
-            <div class="product-column-two">Product 2</div>
-            <div class="product-column-three">Product 3</div>
-        </div>
-        <div class="box4">
-            <div class="flex-layout-2">
-                <div class="layout-two-product">
-                    <div class="image"></div>
-                    <p class="product-text">text</p>
-                </div>
-                <div class="layout-two-product">
-                    <div class="image"></div>
-                    <p class="product-text">text</p>
-                </div>
-                <div class="layout-two-product">
-                    <div class="image"></div>
-                    <p class="product-text">text</p>
-                </div>
-                <div class="layout-two-product">
-                    <div class="image"></div>
-                    <p class="product-text">text</p>
-                </div>
+            <div class="hero">
+                <h1>Your Hero Heading</h1>
             </div>
         </div>
+        <div class="box3">
+            <h2>Content Section</h2>
+        </div>
+        <div class="box4">
+            <!-- Flexbox Layout 1 content here -->
+        </div>
         <div class="box5">
-
+            <!-- Flexbox Layout 2 content here -->
+        </div>
+        <div class="box6">
             <ul>
-                <li class="JSCMAM">JSC"MAM"</li>
-                <li class="BISHKEK">BISHKEK</li>
-                <li class="OSH">OSH</li>
-                <li class="ISSYK-KUL">ISSYK-KUL</li>
-                <li class="KARAKOL">KARAKOL</li>
-                <li class="BATKEN">BATKEN</li>
+                <li><button>Menu Item 1</button></li>
+                <li><button>Menu Item 2</button></li>
+                <li><button>Menu Item 3</button></li>
+                <li><button>Menu Item 4</button></li>
             </ul>
-            
         </div>
-        <div class="box6">6</div>
-        <div class="box7">
-            <div class="box7-image"></div>
-            <div class="box7-image"></div>
-        </div>
-        <div class="box8"><h2>Fly High, Fly Comfortably!</h2></div>
     </div>
+
     <script>
         function switchStyle() {
             let style = document.querySelector('.style');
@@ -70,7 +47,6 @@
                 style.setAttribute('href', 'grid4.css');
             }
         }
-    </script>        
-        
+    </script>
 </body>
 </html>

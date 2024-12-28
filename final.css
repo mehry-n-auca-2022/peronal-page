@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1280px;
+    min-height: 1583px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(auto, 45px) minmax(auto, 480px) minmax(auto, 105px) minmax(auto, 665px) minmax(auto, 135px);
+    grid-template-columns:minmax(50px 100px) minmax(300px, 750px) minmax(100px, 430px);
+    grid-template-areas: 
+    "boxone boxsix boxsix"
+    "boxtwo boxtwo boxtwo"
+    "boxthree boxthree boxthree"
+    "boxfour boxfour boxseven"
+    "boxfive boxfive boxfive";
+}
+
+.box1 {
+    grid-area: boxone;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+}
+.box1 img {
+    max-width: 50px;
+    max-height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box2 {
+    grid-area: boxtwo;
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+.box2 .Org-p {
+    flex-basis: 205px;
+    display: flex;
+    padding-top: 26px;
+    color: white;
+}
+.box2 .Org-p .Organization {
+    flex-basis: 385px;
+    display: flex;
+    font-size: 22px;
+    flex-direction: row-reverse;
+}
+.box2 .Org-p .People {
+    flex-basis: 100px;
+    display: flex;
+    font-size: 22px;
+    flex-direction: row-reverse;
+}
+.box2 .sub-p {
+    flex-basis: 45px;
+    display: flex;
+    color: white;
+}
+.box2 .sub-p .add-prof{
+    flex-basis: 945px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+}
+.box2 .sub-p .sub{
+    flex-basis: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2 .search-bar {
+    flex-basis: 40px;
+    display: flex;
+}
+.box2 .search-bar .searchForm {
+    flex-basis: 958px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 30px;
+    padding-top: 10px;
+}
+.box2 .search-bar .searchForm input {
+    height: 40px;
+    width: 719px;
+}
+.box2 .search-bar .search-icon {
+    flex-basis: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+}
+
+.box3 {
+    grid-area: boxthree;
+    display: flex;
+    background-color: darkgray;
+}
+.box3 .dates {
+    flex-basis: 682px;
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    text-decoration: underline;
+    color: darkblue;
+}
+.box3 .dates .week {
+    flex-basis: 85px;
+    padding-left: 10px;
+}
+.box3 .dates .month {
+    flex-basis: 67px;
+}
+.box3 .dates .Year {
+    flex-basis: 30px;
+}
+.box3 .People {
+    flex-basis: 130px;
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+}
+.box3 .People .nn {
+    flex-basis: 69px;
+    font-size: 22px;
+    color: black;
+}
+.box3 .People .pp {
+    flex-basis: 54px;
+    padding-top: 6px;
+    color: grey;
+}
+.box4 {
+    grid-area: boxfour;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+.box4 .column-one {
+    flex-basis: 208px;
+    display: flex;
+}
+.box4 .column-two {
+    flex-basis: 218px;
+    display: flex;
+}
+.box4 .column-three {
+    flex-basis: 220px;
+    display: flex;
+}
+.box4 .row-one {
+    flex-basis: 405px;
+    display: flex;
+    padding-top: 10px;
+}
+.box4 .row-two {
+    flex-basis: 435px;
+    display: flex;
+    padding-top: 10px;
+}
+
+.box4 img {
+    flex-basis: 157px;
+    padding-left: 10px;
+    max-width: 150px;
+    max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box4 .info {
+    flex-basis: 278px;
+    padding-left: 10px;
+}
+.box4 .info .name {
+    font-size: 18px;
+    color: darkslategrey;
+}
+.box4 .info .age-info {
+    display: flex;
+    padding-top: 15px;
+    font-size: 12px;
+}
+.box4 .info .age-info .DOB {
+    flex-basis: 67px;
+    background-color: cyan;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.box4 .info .age-info .Age {
+    flex-basis: 72px;
+    padding-left: 10px;
+    color: black;
+}
+.box4 .info .description {
+    font-size: 14px;
+    padding-top: 16px;
+    color: black;
+}
+.box5 {
+    grid-area: boxfive;
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+    background-color: black;
+}
+.box5 img {
+    flex-basis: 282px;
+    margin-left: 50px;
+    max-width: 140px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box5 .footer-text {
+    flex-basis: 723px;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-weight: bolder;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 7px;
+    padding-left: 50px;
+    margin-left: 10px;
+    line-height: 18px;
+}
+.box5 .footer-contact {
+    flex-basis: 291px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 30px;
+    line-height: 18px;
+    color: white;
+}
+.box6 {
+    grid-area: boxsix;
+    font-size: 16px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: grey;
+}
+.box6 .rating {
+    flex-basis: 57px;
+}
+.box6 .join {
+    flex-basis: 48px;
+}
+.box6 .person-icon {
+    flex-basis: 34px;
+    font-size: 16px;
+    padding-top: 4px;
+}
+.box6 .search-icon {
+    flex-basis: 34px;
+    font-size: 16px;
+    padding-top: 3px;
+}
+.box6 .Menu-style {
+    flex-basis: 58px;
+    font-size: 19px;
+}
+.box6 .down-arrow {
+    flex-basis: 22px;
+    font-size: 16px;
+    padding-top: 2px;
+}
+.box7 {
+    grid-area: boxseven;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.box7 .section {
+    flex-basis: 68px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    padding-top: 15px;
+    margin-left: 38px;
+    margin-right: 35px;
+    border-bottom: 1px solid gray;
+}
+.box7 .item {
+    flex-basis: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 35px;
+    border-bottom: 1px solid gray;
+}
